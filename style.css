@@ -1,0 +1,37 @@
+* {
+    font-family: "Raleway", sans-serif;
+  }
+  
+  .person {
+    position: relative;
+    border: 1px solid #666;
+    margin: 3rem;
+    display: flex;
+    width: 10rem;
+    height: 10rem;
+    padding: 3rem;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .person.job {
+    background-color: #eee;
+    border: none;
+  }
+  .person img {
+    width: 5rem;
+  }
+  .person h3 {
+    margin-top: 2rem;
+  }
+  .person h3::before {
+    content: "";
+    position: absolute;
+    width: 10rem;
+    height: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #666;
+  }
